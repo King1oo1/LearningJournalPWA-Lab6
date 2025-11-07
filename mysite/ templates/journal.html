@@ -98,7 +98,8 @@
         <div id="journal-entries-container">
             <!-- Flask backend entries will be loaded here AT THE TOP -->
 
-            <!-- Local storage entries will be loaded here -->
+         
+  <!-- Local storage entries will be loaded here -->
 
             <!-- Week 6: Flask Backend & PythonAnywhere (NEWEST STATIC ENTRY) -->
             <article class="journal-entry collapsible">
@@ -109,36 +110,30 @@
                     </div>
                 </div>
                 <div class="collapsible-content">
-                    <div class="entry-meta">December 2025</div>
+                    <div class="entry-meta">November 2025</div>
 
                     <h3>Lab 6 Journal Questions & Answers</h3>
 
                     <h4>1. Why is the frontend–backend connection important?</h4>
-                    <p>The frontend-backend connection is crucial because it enables persistent data storage beyond individual browser sessions, allows multiple users to access and share the same data, provides server-side validation and security, and enables more complex business logic that can't be handled client-side. It separates concerns between presentation (frontend) and data management (backend).</p>
+                    <p>The frontend-backend connection is critical because it allows for persistent data storage beyond individual browser sessions, numerous users accessing and sharing the same data, server-side validation and security, and more complex business logic that cannot be handled client-side. It divides responsibility for display (frontend) and data management (backend).</p>
 
                     <h4>2. Which HTTP methods did you use in Flask, and why?</h4>
-                    <p>I implemented three main HTTP methods in Flask: GET for retrieving all reflections from the server, POST for adding new reflections with proper data validation, and DELETE as an extra feature for removing specific entries. These methods follow RESTful principles and provide complete CRUD (Create, Read, Update, Delete) operations.</p>
+                    <p>I used Flask to construct three primary HTTP methods: GET, which retrieves all reflections from the server, POST, which adds new reflections with appropriate data validation, and DELETE, which is an additional functionality for deleting particular entries. These techniques offer full CRUD (Create, Read, Update, Delete) operations and adhere to RESTful principles.</p>
 
                     <h4>3. What is the difference between using Flask to store and load JSON data and reading JSON directly in the browser?</h4>
-                    <p>Flask stores data persistently on the server, making it accessible to all users and surviving browser sessions. Direct JSON reading is client-side only, limited to individual browsers, and doesn't provide real persistence. Flask also enables server-side processing, validation, and can scale to handle multiple concurrent users.</p>
+                    <p>Flask saves data on the server permanently, making it available to all users and surviving browser sessions. Direct JSON reading is client-side only, confined to specific browsers, and lacks genuine permanence. Flask also supports server-side processing, validation, and can handle several concurrent users.</p>
 
                     <h4>4. Did you face any difficulties when running your project on PythonAnywhere? How did you handle them?</h4>
-                    <p>Yes, I encountered path configuration issues where Flask couldn't find the templates and static folders. I resolved this by using absolute paths with <code>os.path.dirname(os.path.abspath(__file__))</code>. Also, WSGI configuration required careful setup to properly import the Flask application instance.</p>
+                    <p>Yes, I had path setup difficulties where Flask couldn't identify the templates and static directories. This was fixed by utilising absolute paths using os.path.dirname(os.path.abspath(__file__)). Furthermore, sufficient WSGI configuration was necessary to import the Flask application instance.</p>
 
                     <h4>5. What extra feature did you build into your PWA with Flask, and why did you add it?</h4>
-                    <p>I implemented DELETE functionality for individual reflections to provide complete content management. This allows users to remove entries they no longer want, making the application more practical and user-friendly. It demonstrates proper RESTful API design with multiple HTTP methods.</p>
+                    <p>To give complete control, I added the DELETE functionality for individual reflections. This allows users to delete entries they no longer want, making the application more useful and user-friendly. It exhibits good RESTful API design by utilising different HTTP methods.</p>
 
-                    <div style="margin-top: 2rem; padding: 1rem; background: rgba(155, 89, 182, 0.1); border-radius: 8px;">
-                        <h4>🚀 Flask Backend Architecture</h4>
-                        <p><strong>Frontend (Browser):</strong> HTML, CSS, JavaScript with Fetch API</p>
-                        <p><strong>Backend (PythonAnywhere):</strong> Flask application with RESTful endpoints</p>
-                        <p><strong>Data Storage:</strong> JSON file on server with proper file handling</p>
-                        <p><strong>Communication:</strong> HTTP requests/responses with JSON data format</p>
                     </div>
                 </div>
             </article>
 
-            <!-- Week 5: Python & JSON Backend Data -->
+           <!-- Week 5: Python & JSON Backend Data (NEWEST STATIC ENTRY) -->
             <article class="journal-entry collapsible">
                 <div class="collapsible-header">
                     <h2>Week 5: Python & JSON Backend Data</h2>
@@ -152,18 +147,19 @@
                     <h3>Lab 5 Journal Questions & Answers</h3>
 
                     <h4>1. How is storing data in a JSON file different from using browser storage?</h4>
-                    <p>JSON files are cross-platform and version-controlled. They are saved as physical files that may be accessed by multiple apps. Browser storage is device-specific, restricted to 5-10MB, and accessible only through JavaScript within the same browser.</p>
+                    <p>JSON files are cross-platform and version controlled. They are saved as physical files that can be accessed by several applications. Browser storage is device-specific, limited to 5-10MB, and only available through JavaScript inside the same browser.</p>
 
                     <h4>2. How did you use Python to create or update your JSON file?</h4>
-                    <p>Created save_entry.py, which intelligently handles the JSON file by creating it if it is lacking, reading existing entries, adding new ones with automated timestamps, and safely writing everything back with proper formatting and error handling for reliability.</p>
+                    <p>In order to handle the JSON file intelligently, save_entry.py was created. It reads current entries, adds new ones with automated timestamps, and safely writes everything back with correct formatting and error handling for reliability.</p>
 
                     <h4>3. What does your PWA show locally, and what will users see on GitHub? Are they the same? Why or why not?</h4>
-                    <p>Local development displays live JSON updates when Python adds entries. GitHub Pages pauses JSON at commit time since it simply serves static files and does not do any backend processing. They remain synchronised by manual commits.</p>
+                    <p>When Python adds entries, live JSON updates are displayed in local development. GitHub Pages pauses JSON during commit time because it only serves static files and does no backend processing. They remain in sync because of the manual commits.</p>
 
                     <h4>4. What extra feature did you add to your PWA using the JSON file, and why?</h4>
-                    <p>Added an interactive statistics dashboard that counts and categorises data based on their source (JSON/Local/Static). This clearly shows the Python-JS data flow and provides immediate feedback when new entries are added, improving both functionality and learning experience.</p>
-                </div>
+                    <p>Added an interactive statistics dashboard that counts and categorises data based on its source (JSON, Local, or Static). This clearly displays the Python-JS data flow and offers instant feedback when new entries are added, enhancing both functionality and learning experience.</p>
+                    </div>
             </article>
+
 
             <!-- Week 4: Introduction to APIs -->
             <article class="journal-entry collapsible">
